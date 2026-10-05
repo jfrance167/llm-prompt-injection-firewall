@@ -1,0 +1,11 @@
+LLM Prompt Injection Firewall
+Copyright 2026 Jake
+
+Original Python implementation with AI assistance, licensed under Apache-2.0.
+The LICENSE file contains the standard Apache License text.
+
+Design/research references: OWASP LLM01 and Cheat Sheet Series, Protect AI LLM Guard
+and Rebuff, NVIDIA NeMo Guardrails, and the CaMeL paper. See docs/research.md for links.
+No upstream implementation, model weights or third-party attack corpus copied.
+Reference does not imply endorsement. AI assistance and rejected drafting attempts are
+described in README.md; all security decisions and code were reviewed in Codex.

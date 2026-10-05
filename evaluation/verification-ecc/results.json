@@ -1,0 +1,74 @@
+{
+  "checks": {
+    "tests": {
+      "command": [
+        "C:\\Users\\Jake\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit": 0
+    },
+    "compile": {
+      "command": [
+        "C:\\Users\\Jake\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-m",
+        "compileall",
+        "-q",
+        "firewall",
+        "tools",
+        "tests"
+      ],
+      "exit": 0
+    },
+    "bandit": {
+      "command": [
+        "C:\\Users\\Jake\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-m",
+        "bandit",
+        "-r",
+        "firewall",
+        "tools",
+        "-f",
+        "json"
+      ],
+      "exit": 0
+    },
+    "mutation": {
+      "condition": "inspection session binding removed",
+      "exit": 1,
+      "detected": true,
+      "restored": true
+    },
+    "tests_after_restore": {
+      "command": [
+        "C:\\Users\\Jake\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit": 0
+    }
+  },
+  "source_sha256": {
+    "firewall/__init__.py": "4b7f7a5ce64df3f43cd314595811cc7ed779a4861c7a5b258a486c71ac7d1168",
+    "firewall/__main__.py": "8d1dcd443d13a44b773aa2ef13451365dd737fbaa1dc99020d7b969a437b8971",
+    "firewall/contracts.py": "d4ce9bfdbb072629c2bf51b8b1c24a4ce9ebec99817b4bb79a895637f53c99d7",
+    "firewall/detector.py": "75dc628bf34e43a10a451c74771de8e59711b212a935a26d41bc79a0eaee274b",
+    "firewall/evaluation.py": "c5b00ee63dc6611d3ff1f4139715b530974394cb684ce3ae8f6acb61a94cf843",
+    "firewall/gateway.py": "1711aa6051babb73b261a9f04a6dcea4553056dd81163d0e671a00884fce1880",
+    "firewall/policy.py": "82aea486d5e466f6a30657cf5f4fbd9b85800ea4decb26cbd9111a7e2dc5ee45",
+    "firewall/screening.py": "fa18776b8a000d5ab9759c00eea6b7ea73b5061459dff68f603b435ec78ad3ce",
+    "tools/build_fixtures.py": "0b522d7d6fbf0577af4aae6fe010ca08291d81a45384d6966cbbc1aab2006b5e",
+    "tools/verify.py": "65966d3c93e44608bab3a13215677a8b55acc1940a34e8c9f8d7972ec7e6d52a",
+    "tests/test_boundary.py": "ab94f94c64e6151cb1b1fd8a5096ea4c9f7343e3ee0df0ea81967f68b596d650",
+    "tests/test_cli_eval.py": "a07434b9fb0140d5399bf756ec75ddc3b3efd05f36dd817f49abef2fa7447f3a",
+    "tests/test_gateway.py": "1eaafb711d43f86a65bbe6d0324e6dc703c30efa70ca0bbf5336fb44e86afc2d"
+  }
+}

@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env*
+build/
+dist/
+*.egg-info/
+evaluation/local-*.json
+
+# Local review/runtime outputs are never public artifacts.
+.private/
+.drafts/
+.runtime/
+runtime/
+.test-tmp/
+.test-work/
+.verification-work/
+__pycache__/
+*.py[cod]
+.venv/
+graphify-out/
